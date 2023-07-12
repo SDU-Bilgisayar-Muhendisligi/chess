@@ -5,11 +5,15 @@ const Playbutton = () => {
   const navigate = useNavigate();
 
   const handlePlayOnline = () => {
-    navigate('/CreateJoin');
+    navigate('/online');
   };
 
   const handlePlayOffline = () => {
     navigate('/offline');
+  };
+
+  const handlePlayComputer = () => {
+    navigate('/ComputerGame');
   };
 
   return (
@@ -24,15 +28,21 @@ const Playbutton = () => {
       </div>
 
       <button className="w-72 py-5 px-6 bg-[#7FA650] text-white font-bold mb-8 hover:bg-[#96c75a] transition-colors duration-300 rounded shadow-2xl" onClick={handlePlayOnline}>
-  Play Online
-</button>
+        Play Online
+      </button>
 
-      
+
       <button
         className="w-72 py-5 px-6 bg-gray-600 text-white font-bold hover:bg-gray-500 transition-colors duration-300 rounded shadow-xl"
         onClick={handlePlayOffline}
       >
         Play Offline
+      </button>
+      <button
+        className="w-72 py-5 px-6 mt-8 bg-gray-400 text-white font-bold hover:bg-gray-500 transition-colors duration-300 rounded shadow-xl"
+        onClick={handlePlayComputer}
+      >
+        Play Computer
       </button>
     </div>
   );

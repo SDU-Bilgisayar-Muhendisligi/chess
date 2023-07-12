@@ -26,7 +26,7 @@ const SideSelectionForm = () => {
         <form className="input-group">
           <input
             type="text"
-            placeholder="Invite link or code"
+            placeholder="Invite link"
             className="input input-bordered"
             name="joinGameCode"
             id="joinGameCode"
@@ -49,7 +49,6 @@ const SideSelectionForm = () => {
           onChange={handleSideChange}
           className="input input-bordered"
         >
-          <option value="">Random</option>
           <option value="white">White</option>
           <option value="black">Black</option>
         </select>

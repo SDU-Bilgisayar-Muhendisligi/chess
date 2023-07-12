@@ -1,5 +1,5 @@
 import React from 'react'
-import Chess from '../game/gameOffline/chess'
+import ChessOff from '../game/gameOffline/ChessOff'
 import GameHeader from '../components/GameHeader'
 import BoardThemeToggle from '../components/BoardThemeToggle'
 function Offline() {
@@ -8,8 +8,8 @@ function Offline() {
       
     <GameHeader/>
     
-     <Chess/>
-     <BoardThemeToggle/>
+     <ChessOff/>
+    
      </div>
   )
 }
